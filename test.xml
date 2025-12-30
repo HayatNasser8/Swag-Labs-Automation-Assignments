@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Swag Labs Automation Suite" verbose="1" parallel="false">
+
+    <test name="Swag Labs Tests">
+
+        <classes>
+
+            <!-- Login Tests -->
+            <class name="Tests.LoginTest"/>
+
+            <!-- Inventory Tests -->
+            <class name="Tests.InventoryTest"/>
+
+            <!-- Cart Tests -->
+            <class name="Tests.CartTest"/>
+
+        </classes>
+
+    </test>
+
+</suite>

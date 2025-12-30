@@ -1,0 +1,11 @@
+{
+  "validData":{
+    "username": "standard_user",
+    "password": "secret_sauce"
+  },
+
+  "InvalidData":{
+    "username": "wrong_user",
+    "password": "wrong_password"
+  }
+}
