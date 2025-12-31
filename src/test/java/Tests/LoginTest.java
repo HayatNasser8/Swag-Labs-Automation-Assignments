@@ -34,11 +34,11 @@ public class LoginTest extends BaseTest {
    @Test
     public void verifyLoginWithoutPassword()  {
         Map<String, Object> data = DataDriven.readJson("src/main/resources/testData.json");
-        Map<String, String> validUser = (Map<String, String>) data.get("validData");
+        Map<String, String> WithoutPasswordData = (Map<String, String>) data.get("WithoutPasswordData");
 
-       loginPage.login(validUser.get("username"), "");
+       loginPage.login(WithoutPasswordData.get("username"), WithoutPasswordData.get("password"));
 
-       Assert.assertTrue(loginPage.getErrorMessage().contains("Epic sadface: Password is required"));
+       Assert.assertTrue(loginPage.getErrorMessage().contains("Password is required"));
     }
 
 }

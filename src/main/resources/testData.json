@@ -7,5 +7,9 @@
   "InvalidData":{
     "username": "wrong_user",
     "password": "wrong_password"
+  },
+  "WithoutPasswordData":{
+    "username": "standard_user",
+    "password": ""
   }
 }

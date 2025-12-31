@@ -15,7 +15,7 @@ import java.util.Map;
 import java.util.Set;
 
 public class InventoryTest extends BaseTest {
-
+// يسوي لوج ان مره وحده
     //task1
     @Test
     public void verifyInventoryPageElements() {
@@ -47,7 +47,7 @@ public class InventoryTest extends BaseTest {
 
     @Test(dependsOnMethods = "addThreeSpecificProducts")
     public void removeOneProduct() {
-
+        addThreeSpecificProducts();
         cartPage.continueShopping();
 
         inventoryPage.removeBoltTShirt();

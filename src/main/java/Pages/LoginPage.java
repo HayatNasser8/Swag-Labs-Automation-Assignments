@@ -7,7 +7,7 @@ public class LoginPage{
     private By userNameFiled = By.xpath("//*[@id=\"user-name\"]");
     private By passwordFiled = By.xpath("//*[@id=\"password\"]");
     private By loginButton = By.cssSelector("#login-button");
-    private By errorMessage = By.xpath("//*[@id=\"login_button_container\"]/div/form/div[3]/h3");
+    private By errorMessage = By.xpath("//h3[@data-test=\"error\"]");
     public LoginPage(WebDriver driver) {
         this.driver = driver;
     }
