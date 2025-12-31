@@ -116,35 +116,8 @@ public class InventoryPage {
 
 
     // task2
-//    public void verifyOpened_URL_XIcon(){
-//        driver.findElement(XIcon).click();
-//    }
-//    public void verifyOpened_URL_FacebookIcon(){
-//        driver.findElement(FacebookIcon).click();
-//    }
-//    public void verifyOpened_URL_LinkedInIcon(){
-//        driver.findElement(LinkedInIcon).click();
-//    }
 
-//    public void addProductByName(String productName) {
-//        List<WebElement> items = driver.findElements(inventoryItems);
-//
-//        for (WebElement item : items) {
-//            String name = item
-//                    .findElement(By.cssSelector("[data-test='inventory-item-name']"))
-//                    .getText();
-//
-//            if (name.equalsIgnoreCase(productName)) {
-//                item
-//                        .findElement(By.cssSelector("button[data-test^='add-to-cart']"))
-//                        .click();
-//                break;
-//            }
-//        }
-//    }
 public void addProductByName(String productName) {
-
-
 
     List<WebElement> items = driver.findElements(inventoryItems);
 
@@ -166,29 +139,7 @@ public void addProductByName(String productName) {
 }
 
 
-//    public void addThreeProducts() {
-//        addProductByName("Sauce Labs Backpack");
-//        addProductByName("Sauce Labs Bolt T-Shirt");
-//        addProductByName("Sauce Labs Onesie");
-//    }
 
-//    public void addThreeProducts() {
-//        driver.findElement(backpackAdd).click();
-//        driver.findElement(boltTshirtAdd).click();
-//        driver.findElement(onesieAdd).click();
-//    }
-
-//    public boolean isBoltTShirtAddToCartDisplayed() {
-//        return driver.findElement(boltTshirtAdd).isDisplayed();
-//    }
-//
-//    public boolean isBackpackRemoveDisplayed() {
-//        return driver.findElement(backpackRemove).isDisplayed();
-//    }
-//
-//    public boolean isOnesieRemoveDisplayed() {
-//        return driver.findElement(onesieRemove).isDisplayed();
-//    }
 
 
 }

@@ -45,17 +45,15 @@ public class InventoryTest extends BaseTest {
         Assert.assertEquals(cartPage.getCartItemsCount(), 3);
     }
 
-    @Test(dependsOnMethods = "addThreeSpecificProducts")
+    @Test
     public void removeOneProduct() {
         addThreeSpecificProducts();
         cartPage.continueShopping();
 
         inventoryPage.removeBoltTShirt();
 
-//
         Assert.assertTrue(inventoryPage.isProductAdded("Sauce Labs Backpack"), "Backpack should still be added");
 
-//
     }
 
 
