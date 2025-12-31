@@ -15,7 +15,7 @@ import java.util.Map;
 import java.util.Set;
 
 public class InventoryTest extends BaseTest {
-// يسوي لوج ان مره وحده
+
     //task1
     @Test
     public void verifyInventoryPageElements() {
